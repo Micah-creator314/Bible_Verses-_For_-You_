@@ -1,20 +1,25 @@
 body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  color: white;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from pink to orange */
+  font-family: Arial, sans-serif;
   text-align: center;
-  padding: 2rem;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb, #a1ffce, #faffd1);
-  background-size: 600% 600%;
-  animation: gradientShift 20s ease infinite;
+  padding: 50px;
+  color: white;
 }
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+h1 {
+  font-size: 3em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #feb47b;
 }
