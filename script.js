@@ -9,5 +9,6 @@ const bibleVerses = [
 function getBibleVerse() {
   const randomIndex = Math.floor(Math.random() * bibleVerses.length);
   const randomVerse = bibleVerses[randomIndex];
+  console.log(randomVerse);  // Check if the verse is logged to the console
   document.getElementById("quote").innerText = randomVerse;
 }
