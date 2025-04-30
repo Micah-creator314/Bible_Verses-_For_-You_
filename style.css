@@ -1,21 +1,25 @@
 body {
-  font-family: sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from pink to orange */
+  font-family: Arial, sans-serif;
   text-align: center;
-  padding: 2em;
-  background-color: #f0f8ff;
+  padding: 50px;
+  color: white;
 }
 
-#quote {
-  font-size: 1.2em;
-  margin: 1em 0;
+h1 {
+  font-size: 3em;
 }
 
 button {
-  padding: 0.5em 1em;
-  font-size: 1em;
-  background-color: #6a9bd8;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #ff7e5f;
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #feb47b;
 }
