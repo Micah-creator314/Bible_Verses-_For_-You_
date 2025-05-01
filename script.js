@@ -16,9 +16,9 @@ const bibleVerses = [
   "The Lord will fight for you; you need only to be still. – Exodus 14:14"
 ];
 
-function getBibleVerse() {
-  const randomIndex = Math.floor(Math.random() * bibleVerses.length);
-  const randomVerse = bibleVerses[randomIndex];
-  console.log(randomVerse);  // Check if the verse is logged to the console
-  document.getElementById("quote").innerText = randomVerse;
-}
+const today = new Date();
+const verseIndex = today.getDate() % verses.length;
+const verse = verses[verseIndex];
+
+document.getElementById("verse").textContent = `“${verse.text}”`;
+document.querySelector(".reference").textContent = `— ${verse.ref}`;
